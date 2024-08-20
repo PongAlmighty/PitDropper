@@ -1,8 +1,9 @@
 {
-    "name": "Untitled",
+    "name": "PitDropper",
     "description": "",
     "dependencies": {
-        "circuit-playground": "*"
+        "circuit-playground": "*",
+        "servo": "*"
     },
     "files": [
         "main.blocks",
