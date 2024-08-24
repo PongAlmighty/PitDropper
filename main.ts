@@ -10,7 +10,7 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
         } else {
             light.setPixelColor(TimerLight, 0xff8000)
             if (WasWarningPlayed == 0) {
-                music.powerUp.play()
+                music.powerUp.playUntilDone()
                 WasWarningPlayed = 1
                 servos.A1.setAngle(180)
             }
@@ -24,9 +24,9 @@ let TimeBetweenLights = 0
 let PinOrder: number[] = []
 let TimeToDropMS = 0
 light.showAnimation(light.runningLightsAnimation, 2000)
-let TotalMatchTime = 0.5
+let TotalMatchTime = 0.3
 let TotalMatchTimems = MessWithTime(TotalMatchTime)
-let TimeToDrop = 0.3
+let TimeToDrop = 0.2
 TimeToDropMS = MessWithTime(TimeToDrop)
 PinOrder = [
 4,

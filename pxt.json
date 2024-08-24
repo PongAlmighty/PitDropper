@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "circuit-playground": "*",
-        "servo": "*"
+        "servo": "*",
+        "cable": "*"
     },
     "files": [
         "main.blocks",
