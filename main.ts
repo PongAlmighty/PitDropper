@@ -23,7 +23,7 @@ input.touchA5.onEvent(ButtonEvent.Down, function () {
             TimeToDrop = Increment
             MenuLights = 1
         }
-        for (let TimerLight of PinOrder) {
+        for (let value of PinOrder) {
             light.setAll(0xffff00)
             light.setPixelColor(MenuLights, 0xff00ff)
         }
@@ -56,7 +56,7 @@ input.touchA4.onEvent(ButtonEvent.Down, function () {
         } else {
         	
         }
-        for (let TimerLight of PinOrder) {
+        for (let value of PinOrder) {
             light.setAll(0xffff00)
             light.setPixelColor(MenuLights, 0x00ffff)
         }
